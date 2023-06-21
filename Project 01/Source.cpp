@@ -483,4 +483,3 @@ b:
 
 // bad practices with goto
 // never use it next time
-// Rustam_Z
