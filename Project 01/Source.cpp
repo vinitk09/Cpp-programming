@@ -304,7 +304,7 @@ int main()
 						break;
 				case 4:
 					cout << "\t\t\t\t***Square***" << endl;
-					// e:
+				e:
 					cout << "Enter the side of square: ";
 					cin >> sidesquare;
 					if (sidesquare > 0)
@@ -373,7 +373,7 @@ int main()
 						break;
 				case 3:
 					cout << "\t\t\t\t***TRIANGLE***" << endl;
-					// d1:
+				d1:
 					cout << "Enter the first side of the triangle: ";
 					cin >> sidetriangleA;
 					cout << "Enter the second side of the triangle: ";
@@ -385,26 +385,26 @@ int main()
 					{
 						circumference(sidetriangleA, sidetriangleB, sidetriangleC);
 						second();
-						// goto g;
+						goto g;
 					}
 					else
-						// goto d1;
-						break;
+						goto d1;
+					break;
 
 				case 4:
 					cout << "\t\t\t\t***Square***" << endl;
-					// e1:
+				e1:
 					cout << "Enter the side of square: ";
 					cin >> sidesquare;
 					if (sidesquare > 0)
 					{
 						circumference(sidesquare);
 						second();
-						// goto g;
+						goto g;
 					}
 					else
-						// goto e1;
-						break;
+						goto e1;
+					break;
 				case 5:
 					main();
 					break;
@@ -414,13 +414,13 @@ int main()
 				break;
 			}
 			else
-				// goto g;
-				break;
+				goto g;
+			break;
 			///////////////////////////////////////////////////////////////////////////////////////////////////////////
 		case 3: // third333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
 			third();
 			cout << "\t\t\tPlease enter 3 numbers to compare.\n\t\t\tYou can write even an integer or decimal number. For example: 123, 12.123, 0,123 \n";
-			// x:
+		x:
 			cout << endl;
 			cout << "Enter the first number: ";
 			cin >> n1;
@@ -432,10 +432,10 @@ int main()
 			char quit;
 			cout << "Do you want to try again(y/n)? ";
 			if (cin >> quit && quit == 'y') // when user will input 'y' the code will again ask you to input a 3 numbers
-											// goto x;						// when it will be 'n' the code will go to the main menu
+				goto x;						// when it will be 'n' the code will go to the main menu
 			// else
 			{
-				// system("cls");
+
 				main();
 			}
 			break;
@@ -456,10 +456,10 @@ int main()
 			char quit2;
 			cout << "Do you want to try again(y/n)? "; // when user will input 'y' the code will again ask you to input a 3 numbers
 			if (cin >> quit2 && quit2 == 'y')		   // when it will be 'n' the code will go to the main menu
-													   // goto qw;
+				goto qw;
 			// else
 			{
-				// system("cls");
+
 				main();
 			}
 			break; // breaking the case 4 of the main menu
@@ -469,7 +469,6 @@ int main()
 	}
 	else
 		// goto b;
-		// system("pause");
 		return 0;
 }
 
