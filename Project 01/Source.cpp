@@ -207,7 +207,7 @@ T Large(T n1, T n2, T n3)
 /////////////////////////////////////***STARTING POINT***////////////////////////////////////////////////////
 int main()
 {
-	// system("color 3E");
+
 	int numberforoperation = 0;
 	double radius1;
 	double sideA, sideB;
@@ -233,44 +233,42 @@ int main()
 	cout << "\t[4] finding the largest number with function template.\n";
 	cout << "\t[5] EXIT\n";
 	cout << endl;
-b:
 	cout << " Please enter the number of operation you would like to execute:  ";
 	cin >> numberforoperation;
 	if (numberforoperation > 0 && numberforoperation < 6)
 	{
-		// system("cls");
+
 		switch (numberforoperation)
 		{
 		case 1: // first11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 			first();
 			int firstfirst;
-		f:
+
 			cout << " Choose one figure: ";
 			cin >> firstfirst;
 			if (firstfirst > 0 && firstfirst < 6)
 			{
-				// system("cls");		// ends the main menu
+
 				switch (firstfirst) // firstfirst
 				{
-					// system("cls"); // ends the main menu
+
 				case 1:
 					cout << "\t\t\t\t***CIRCLE***\n";
-				a:
+
 					cout << "Enter the radius of the circle: ";
 					cin >> radius1;
 					if (radius1 > 0)
 					{
 						area(radius1);
 						first();
-						// goto f;
 					}
 					else
-						// goto a;
+
 						break;
 
 				case 2:
 					cout << "\t\t\t\t***RECTANGLE***\n";
-				c:
+
 					cout << "Enter the height of rectangle: ";
 					cin >> sideA;
 					cout << "Enter the width of the rectangle: ";
@@ -281,10 +279,9 @@ b:
 						area(sideA, sideB);
 
 						first();
-						// goto f;
 					}
 					else
-						// goto c;
+
 						break;
 				case 3:
 					cout << "\t\t\t\t***TRIANGLE***" << endl;
@@ -301,10 +298,9 @@ b:
 						area(sidetriangleA, sidetriangleB, sidetriangleC);
 
 						first();
-						// goto f;
 					}
 					else
-						// goto d;
+
 						break;
 				case 4:
 					cout << "\t\t\t\t***Square***" << endl;
@@ -316,10 +312,9 @@ b:
 						area(sidesquare);
 
 						first();
-						// goto f;
 					}
 					else
-						// goto e;
+
 						break;
 				case 5:
 				{
@@ -332,7 +327,7 @@ b:
 				break;
 			}
 			else
-				// goto f;
+
 				break;
 
 		case 2: // second2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
@@ -343,28 +338,26 @@ b:
 			cin >> secondsecond;
 			if (secondsecond > 0 && secondsecond < 6)
 			{
-				// system("cls");		  // ends the main menu
 				switch (secondsecond) // firstfirst
 				{
-					// system("cls"); // ends the main menu
+
 				case 1:
 					cout << "\t\t\t\t***CIRCLE***\n";
-					// h:
+
 					cout << "Enter the radius of the circle: ";
 					cin >> radius1;
 					if (radius1 > 0)
 					{
 						circumference(radius1);
 						second();
-						// goto g;
 					}
 					else
-						// goto h;
+
 						break;
 
 				case 2:
 					cout << "\t\t\t\t***RECTANGLE***\n";
-				j:
+
 					cout << "Enter the height of rectangle: ";
 					cin >> sideA;
 					cout << "Enter the width of the rectangle: ";
@@ -374,10 +367,9 @@ b:
 					{
 						circumference(sideA, sideB);
 						second();
-						// goto g;
 					}
 					else
-						// goto j;
+
 						break;
 				case 3:
 					cout << "\t\t\t\t***TRIANGLE***" << endl;
